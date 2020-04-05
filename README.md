@@ -13,6 +13,13 @@ Personal MacOSx setup for software development.
 - [Terminal](#terminal)
   - [Homebrew](#homebrew)
     - [Useful Commands](#useful-commands)
+  - [iTerm2](#iterm2)
+    - [Key Shortcuts](#key-shortcuts-1)
+    - [Hotkey Window](#hotkey-window)
+    - [Setting Key Bindings](#setting-key-bindings)
+    - [Instant Replay Mode](#instant-replay-mode)
+    - [Shell Integration](#shell-integration)
+    - [Triggers](#triggers)
 
 ## MacOSx
 
@@ -65,9 +72,11 @@ Personal MacOSx setup for software development.
 
 ## Terminal
 
-### Homebrew
+### [Homebrew](https://brew.sh/)
 
 Homebrew is a very useful MacOSx package manager which can be accessed from terminal.
+
+To install it open terminal and run this command:
 
 ```bash
 /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -83,3 +92,67 @@ Homebrew is a very useful MacOSx package manager which can be accessed from term
 - **brew cask list**: lists installed MacOSx applications.
 - **brew update**: updates local package registry.
 - **brew upgrade**: upgrade all installed packages.
+
+### [iTerm2](https://www.iterm2.com/index.html)
+
+iTerm2 is arguably the best terminal replacement. It offers a wide range of very useful features.
+
+To install iTerm2 open terminal and run this command:
+
+```bash
+brew cask install iterm2
+```
+
+#### Key Shortcuts
+
+| Shortcut | Action                     |
+| :------- | :------------------------- |
+| ⌘ ,      | Preferences                |
+| ⌘ Enter  | Go Full Screen             |
+| ⌘ T      | New Tab                    |
+| ⌘ ←      | Previous Tab               |
+| ⌘ →      | Next Tab                   |
+| ⎇ ⌘ ↑/↓  | Go to next Horizontal Pane |
+| ⎇ ⌘ ←/→  | Go to next Vertical Pane   |
+
+#### Hotkey Window
+
+Show and hide iTerm2 terminal using a hotkey. This can be set by checking ``iTerm2 > Preferences > Keys > HotKey > ☑️ Show/hide all windows with a system-wide hotkey``
+
+#### Setting Key Bindings
+
+You can set key bindings by going to ``iTerm2 > Preferences > Keys > Key Binding``
+
+Some useful key bindings can be viewed in the table below:
+
+| Shortcut | Action                   |
+| :------- | :----------------------- |
+| ⎇ H      | Split Panes Horizontally |
+| ⎇ V      | Split Panes Vertically   |
+
+#### Instant Replay Mode
+
+You can enter instant replay mode using ``⎇ ⌘ B`` and then use left and right arrows to navigate commands you just wrote. Once done press ``Esc`` to exit mode.
+
+#### Shell Integration
+
+Shell integration offers better integration with Shell and enables features like:
+
+ 1. Access to frequently used directories.
+ 2. Automatic profile switching based on host names or user profiles.
+
+You can enable shell integration by running:
+
+```bash
+curl -L https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
+source ~/.iterm2_shell_integration.zsh
+```
+
+#### Triggers
+
+Triggers are custom user defined actions that gets triggered based on a regular expression match in the command history. They can be used to:
+
+1. Stop scrolling on a specific line matching a regular expression. (e.g. stop on test failures).
+2. Color highlight custom text (e.g. URLs).
+3. Automatically respond to prompts.
+4. Send notification when a specific output is returned.
