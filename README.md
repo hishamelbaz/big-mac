@@ -150,9 +150,11 @@ source ~/.iterm2_shell_integration.zsh
 
 #### Triggers
 
-Triggers are custom user defined actions that gets triggered based on a regular expression match in the command history. They can be used to:
+Triggers are custom user defined actions that gets triggered based on a regular expression match in the command history. They can be used, among other uses, to:
 
 1. Stop scrolling on a specific line matching a regular expression. (e.g. stop on test failures).
 2. Color highlight custom text (e.g. URLs).
 3. Automatically respond to prompts.
 4. Send notification when a specific output is returned.
+
+You can set triggers by going to `iTerm2 > Preferences > Profiles > Select Profile > Advanced > Triggers > Edit`
