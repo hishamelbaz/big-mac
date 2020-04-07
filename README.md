@@ -20,6 +20,10 @@ Personal MacOSx setup for software development.
     - [Instant Replay Mode](#instant-replay-mode)
     - [Shell Integration](#shell-integration)
     - [Triggers](#triggers)
+  - [Git](#git)
+  - [ZSH](#zsh)
+
+---
 
 ## MacOSx
 
@@ -27,8 +31,8 @@ Personal MacOSx setup for software development.
 
 #### Show Path and Status Bars
 
-``Finder > View > Show Path Bar``  
-``Finder > View > Show Status Bar``
+`Finder > View > Show Path Bar`  
+`Finder > View > Show Status Bar`
 
 ### Key Shortcuts
 
@@ -51,6 +55,7 @@ Personal MacOSx setup for software development.
 | ⌘ Tab    | Rotate Windows   |
 
 <!-- markdownlint-disable MD024 -->
+
 #### Finder
 
 | Shortcut | Action                   |
@@ -69,6 +74,8 @@ Personal MacOSx setup for software development.
 | :------- | :-------------------------------------- |
 | ⇧ ⌘ 3    | Take Screenshot of the Full Screen      |
 | ⇧ ⌘ 4    | Take Screenshot of a Part of the Screen |
+
+---
 
 ## Terminal
 
@@ -117,11 +124,11 @@ brew cask install iterm2
 
 #### Hotkey Window
 
-Show and hide iTerm2 terminal using a hotkey. This can be set by checking ``iTerm2 > Preferences > Keys > HotKey > ☑️ Show/hide all windows with a system-wide hotkey``
+Show and hide iTerm2 terminal using a hotkey. This can be set by checking `iTerm2 > Preferences > Keys > HotKey > ☑️ Show/hide all windows with a system-wide hotkey`
 
 #### Setting Key Bindings
 
-You can set key bindings by going to ``iTerm2 > Preferences > Keys > Key Binding``
+You can set key bindings by going to `iTerm2 > Preferences > Keys > Key Binding`
 
 Some useful key bindings can be viewed in the table below:
 
@@ -132,14 +139,14 @@ Some useful key bindings can be viewed in the table below:
 
 #### Instant Replay Mode
 
-You can enter instant replay mode using ``⎇ ⌘ B`` and then use left and right arrows to navigate commands you just wrote. Once done press ``Esc`` to exit mode.
+You can enter instant replay mode using `⎇ ⌘ B` and then use left and right arrows to navigate commands you just wrote. Once done press `Esc` to exit mode.
 
 #### Shell Integration
 
 Shell integration offers better integration with Shell and enables features like:
 
- 1. Access to frequently used directories.
- 2. Automatic profile switching based on host names or user profiles.
+1.  Access to frequently used directories.
+2.  Automatic profile switching based on host names or user profiles.
 
 You can enable shell integration by running:
 
@@ -158,3 +165,28 @@ Triggers are custom user defined actions that gets triggered based on a regular 
 4. Send notification when a specific output is returned.
 
 You can set triggers by going to `iTerm2 > Preferences > Profiles > Select Profile > Advanced > Triggers > Edit`
+
+### Git
+
+Popular tool used for version control.
+
+To install:
+
+```bash
+brew install git
+```
+
+### ZSH
+
+ZSH is an advanced shell built on top of Bash that offers a wide range of useful features including:
+
+- **Tab Completion**: Press `Tab` to autocomplete commands.
+- **Globbing**: Use wildcards to list all possible options, for example `ls file_*`
+
+To install:
+
+```bash
+brew install zsh
+echo '/usr/local/bin/zsh' >> /etc/shells
+chsh -s /usr/local/bin/zsh
+```
