@@ -89,7 +89,7 @@ Homebrew is a very useful MacOSx package manager which can be accessed from term
 To install it open terminal and run this command:
 
 ```bash
-/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 #### Useful Commands
@@ -128,7 +128,12 @@ brew cask install iterm2
 
 #### Hotkey Window
 
-Show and hide iTerm2 terminal using a hotkey. This can be set by checking `iTerm2 > Preferences > Keys > HotKey > ☑️ Show/hide all windows with a system-wide hotkey`
+Show and hide iTerm2 terminal using a hotkey. This can be done by following the below steps:
+1. `iTerm2 > Preferences > Profiles > Select Profile > Window > Style - Full-Width Top of Screen`
+2. `iTerm2 > Preferences > Profiles > Select Profile > Window > Screen - Screen with Cursor`
+3. `iTerm2 > Preferences > Profiles > Select Profile > Window > Space - All Spaces`
+4. `iTerm2 > Preferences > Profiles > Select Profile > Keys > ☑️  A hotkey opens a dedicated window with this profile > Configure Hotkey Window > Add Hotkey`
+5. `iTerm2 > Preferences > Appearance > ☑️  Exclude from Dock and ⌘-Tab Application Switcher`
 
 #### Setting Key Bindings
 
@@ -189,13 +194,48 @@ ZSH is an advanced shell built on top of Bash that offers a wide range of useful
 - **Tab Completion**: Press `Tab` to autocomplete commands.
 - **Globbing**: Use wildcards to list all possible options, for example `ls file_*`
 
-To install:
+It comes as the default shell with Catalina, but for earlier versions you can install it by running:
 
 ```bash
 brew install zsh
-echo '/usr/local/bin/zsh' >> /etc/shells
+sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
 chsh -s /usr/local/bin/zsh
 ```
+
+#### [Oh My ZSH](https://ohmyz.sh/)
+
+Oh My ZSH is a framework that manages ZSH shell configurations. It offers an easy and very useful way to add plugins and themes among other features.
+
+To install:
+
+```bash
+sh -c “$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+This will update ZSH preferences by overwriting `~/.zshrc`. Below are some customization that can be applied to that file to support different features.
+
+##### Theme
+
+To update theme you have to set `ZSH_THEME` to the theme name. You can find an extensive list of themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
+
+Recommended Themes:
+
+- [**Powerlevel9k**](https://github.com/romkatv/powerlevel10k)
+
+  ```bash
+  brew install romkatv/powerlevel10k/powerlevel10k
+  echo "source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+  p10k configure
+  ```
+
+- [**Spaceship**](https://github.com/denysdovhan/spaceship-prompt)
+
+  ```bash
+  git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+  ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+  ```
+
+  Then set `ZSH_THEME="spaceship"` in your `~/.zshrc`
 
 #### ZSH Plugins
 
@@ -223,68 +263,5 @@ chsh -s /usr/local/bin/zsh
   To be able to use, a key must be bound to the feature, it's recommended to use **up arrow** as below:
 
   ```bash
-  echo "bindkey '^[OA' history-substring-search-up" >> ~/.zshrc
-  ```
-
-### [Oh My ZSH](https://ohmyz.sh/)
-
-Oh My ZSH is a framework that manages ZSH shell configurations. It offers an easy and very useful way to add plugins and themes among other features.
-
-To install:
-
-```bash
-sh -c “$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-This will update ZSH preferences by overwriting `~/.zshrc`. Below are some customization that can be applied to that file to support different features.
-
-#### Theme
-
-To update theme you have to set `ZSH_THEME` to the theme name. You can find an extensive list of themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
-
-Recommended Themes:
-
-- [**Powerlevel9k**](https://github.com/romkatv/powerlevel10k)
-
-  ```bash
-  brew install romkatv/powerlevel10k/powerlevel10k
-  p10k configure
-  ```
-
-- [**Spaceship**](https://github.com/denysdovhan/spaceship-prompt)
-
-  ```bash
-  git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-  ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-  ```
-
-  Then set `ZSH_THEME="spaceship"` in your `~/.zshrc`
-
-#### Oh My ZSH Plugins
-
-- [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting): highlights commands in ZSH terminal.
-
-  ```bash
-  brew install zsh-syntax-highlighting
-  echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-  ```
-
-- [**zsh-auto-suggestions**](https://github.com/zsh-users/zsh-autosuggestions): suggests commands as you type based on history and completions.
-
-  ```bash
-  brew install zsh-autosuggestions
-  echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
-  ```
-
-- [**zsh-history-substring-search**](https://github.com/zsh-users/zsh-history-substring-search): auto completes commands from history based on substrings.
-
-  ```bash
-  brew install zsh-history-substring-search
-  echo "source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh" >> ~/.zshrc
-  ```
-
-  To be able to use, a key must be bound to the feature, it's recommended to use **up arrow** as below:
-
-  ```bash
-  echo "bindkey '^[OA' history-substring-search-up" >> ~/.zshrc
+  echo "bindkey '^[[A' history-substring-search-up" >> ~/.zshrc
   ```
