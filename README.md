@@ -17,7 +17,7 @@ Personal MacOSx setup for software development.
     - [Key Shortcuts](#key-shortcuts-1)
     - [Hotkey Window](#hotkey-window)
     - [Setting Key Bindings](#setting-key-bindings)
-    - [Instant Replay Mode](#instant-replay-mode)
+    - [Status Bar](#status-bar)
     - [Shell Integration](#shell-integration)
     - [Triggers](#triggers)
   - [Git](#git)
@@ -37,6 +37,9 @@ Personal MacOSx setup for software development.
       - [Markdown](#markdown)
 - [Security](#security)
   - [LastPass](#lastpass)
+- [Productivity](#productivity)
+  - [Spark](#spark)
+  - [Trello](#trello)
 
 ---
 
@@ -136,6 +139,7 @@ brew cask install iterm2
 | ⌘ →      | Next Tab                   |
 | ⎇ ⌘ ↑/↓  | Go to next Horizontal Pane |
 | ⎇ ⌘ ←/→  | Go to next Vertical Pane   |
+| ⎇ ⌘ B    | Instant Replay Mode        |
 
 #### Hotkey Window
 
@@ -158,9 +162,12 @@ Some useful key bindings can be viewed in the table below:
 | ⎇ H      | Split Panes Horizontally |
 | ⎇ V      | Split Panes Vertically   |
 
-#### Instant Replay Mode
+#### [Status Bar](https://www.iterm2.com/documentation-status-bar.html)
 
-You can enter instant replay mode using `⎇ ⌘ B` and then use left and right arrows to navigate commands you just wrote. Once done press `Esc` to exit mode.
+iTerm2 also supports adding a status bar with nice looking widgets for CPU, Memory, Battery, Clock, Search Bar and more. You can configure the status bar by:
+``iTerm2 > Preferences > Profiles > Select Profile > Session > ☑️ Status Bar Enabled > Configure Status Bar``
+
+![Sample Status Bar](./assets/images/iTerm2%20-%20Status%20Bar.png)
 
 #### [Shell Integration](https://www.iterm2.com/documentation-shell-integration.html)
 
@@ -246,6 +253,8 @@ Recommended Themes:
   echo "source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
   p10k configure
   ```
+
+  ![Sample Powerlevel9k Setup](./assets/images/iTerm2%20-%20Powerlevel9k.png)
 
 - [**Spaceship**](https://github.com/denysdovhan/spaceship-prompt)
 
@@ -335,4 +344,16 @@ brew cask install visual-studio-code
 
 ### [LastPass](https://www.lastpass.com/)
 
-Lastpass is a password manager that can safely store and sync your passwords. You can install it from the [AppStore](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
+Lastpass is a password manager that can safely store and sync your passwords. [AppStore Link](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
+
+---
+
+## Productivity
+
+### [Spark](https://sparkmailapp.com/)
+
+Spark is a very powerful email client, that in addition to looking good provides lots of nice features. [AppStore Link](https://apps.apple.com/gb/app/spark-email-app-by-readdle/id1176895641?mt=12)
+
+### [Trello](https://trello.com/)
+
+Trello is a simplistic but powerful board to organize tasks and plans for projects. [AppStore Link](https://apps.apple.com/gb/app/trello/id1278508951?mt=12)
