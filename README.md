@@ -23,8 +23,11 @@ Personal MacOSx setup for software development.
   - [Git](#git)
   - [ZSH](#zsh)
     - [Oh My ZSH](#oh-my-zsh)
-      - [Theme](#theme)
-    - [Plugins](#plugins)
+      - [Themes](#themes)
+      - [Oh My ZSH Plugins](#oh-my-zsh-plugins)
+    - [ZSH Plugins](#zsh-plugins)
+  - [tldr](#tldr)
+  - [tree](#tree)
 - [Browsers](#browsers)
   - [Firefox](#firefox)
     - [Installation](#installation)
@@ -39,6 +42,7 @@ Personal MacOSx setup for software development.
   - [LastPass](#lastpass)
 - [Productivity](#productivity)
   - [Spark](#spark)
+  - [Bear](#bear)
   - [Trello](#trello)
 
 ---
@@ -157,10 +161,12 @@ You can set key bindings by going to `iTerm2 > Preferences > Keys > Key Binding`
 
 Some useful key bindings can be viewed in the table below:
 
-| Shortcut | Action                   |
-| :------- | :----------------------- |
-| ⎇ H      | Split Panes Horizontally |
-| ⎇ V      | Split Panes Vertically   |
+| Shortcut | Action                       |
+| :------- | :--------------------------- |
+| ⎇ H      | Split Panes Horizontally     |
+| ⎇ V      | Split Panes Vertically       |
+| ⎇ ←      | Send Escape Sequence `Esc+b` |
+| ⎇ →      | Send Escape Sequence `Esc+f` |
 
 #### [Status Bar](https://www.iterm2.com/documentation-status-bar.html)
 
@@ -240,13 +246,24 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 This will update ZSH preferences by overwriting `~/.zshrc`. Below are some customization that can be applied to that file to support different features.
 
-##### Theme
+##### Themes
 
 To update theme you have to set `ZSH_THEME` to the theme name. You can find an extensive list of themes [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 
-Recommended Themes:
+Color Themes:
 
-- [**Powerlevel9k**](https://github.com/romkatv/powerlevel10k)
+- [**Dracula**](https://draculatheme.com/iterm)
+
+  ```bash
+  git clone https://github.com/dracula/iterm.git
+  ```
+
+  ``iTerm2 > Preferences > Profiles > Select Profile > Colors > Import Dracula.itermcolors``  
+  ``iTerm2 > Preferences > Profiles > Select Profile > Colors > Select Dracula``
+
+Themes:
+
+- [**Powerlevel10k**](https://github.com/romkatv/powerlevel10k)
 
   ```bash
   brew install romkatv/powerlevel10k/powerlevel10k
@@ -254,7 +271,7 @@ Recommended Themes:
   p10k configure
   ```
 
-  ![Sample Powerlevel9k Setup](./assets/images/iTerm2%20-%20Powerlevel9k.png)
+  ![Sample Powerlevel10k Setup](./assets/images/iTerm2%20-%20Powerlevel10k.png)
 
 - [**Spaceship**](https://github.com/denysdovhan/spaceship-prompt)
 
@@ -265,20 +282,32 @@ Recommended Themes:
 
   Then set `ZSH_THEME="spaceship"` in your `~/.zshrc`
 
-#### Plugins
+##### Oh My ZSH Plugins
 
-- [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting): highlights commands in ZSH terminal.
+- [**alias-finder**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/alias-finder): finds an alias for a given command.
+- [**common-aliases**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/common-aliases): adds a wide list of common aliases.
+- [**copydir**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copydir): copies current directory path to clipboard.
+- [**copyfile**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile): copies content of a file to clipboard.
+- [**docker**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker): adds autocompletion for docker commands.
+- [**dotenv**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dotenv): loads environment variables from .env file in a directory.
+- [**extract**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/extract): tool to support extracting all types of compressed files.
+- [**git**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git): adds useful aliases for git commands.
+- [**z**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/z): provide quick access to most recently accessed directories.
 
-  ```bash
-  brew install zsh-syntax-highlighting
-  echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
-  ```
+#### ZSH Plugins
 
 - [**zsh-auto-suggestions**](https://github.com/zsh-users/zsh-autosuggestions): suggests commands as you type based on history and completions.
 
   ```bash
   brew install zsh-autosuggestions
   echo "source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+  ```
+
+- [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting): highlights commands in ZSH terminal.
+
+  ```bash
+  brew install zsh-syntax-highlighting
+  echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
   ```
 
 - [**zsh-history-substring-search**](https://github.com/zsh-users/zsh-history-substring-search): auto completes commands from history based on substrings.
@@ -291,8 +320,27 @@ Recommended Themes:
   To be able to use, a key must be bound to the feature, it's recommended to use **up arrow** as below:
 
   ```bash
-  echo "bindkey '^[[A' history-substring-search-up" >> ~/.zshrc
+  echo "bindkey '^[OA' history-substring-search-up" >> ~/.zshrc
+  echo "bindkey '^[OB' history-substring-search-down" >> ~/.zshrc
   ```
+
+### [tldr](https://github.com/tldr-pages/tldr)
+
+Simplified and community driven man-pages.
+
+```bash
+brew install tldr
+```
+
+### tree
+
+A recursive directory listing command that produces a depth indented listing of files.
+
+```bash
+brew install tree
+```
+
+![Tree](assets/images/tree.png)
 
 ---
 
@@ -353,6 +401,10 @@ Lastpass is a password manager that can safely store and sync your passwords. [A
 ### [Spark](https://sparkmailapp.com/)
 
 Spark is a very powerful email client, that in addition to looking good provides lots of nice features. [AppStore Link](https://apps.apple.com/gb/app/spark-email-app-by-readdle/id1176895641?mt=12)
+
+### [Bear](https://bear.app/)
+
+Bear is a minimalistic inline markdown editor, it's a great tool for note taking. [AppStore Link](https://apps.apple.com/gb/app/bear/id1091189122?mt=12)
 
 ### [Trello](https://trello.com/)
 
