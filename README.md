@@ -56,7 +56,9 @@ Personal MacOSx setup for software development.
   - [LastPass](#lastpass)
 - [Productivity](#productivity)
   - [Spark](#spark)
+    - [Notification Badges](#notification-badges)
   - [Things 3](#things-3)
+    - [Things Cloud](#things-cloud)
   - [Bear](#bear)
   - [Trello](#trello)
 
@@ -102,18 +104,19 @@ Add any sensitive apps to the ignored apps section.
 
 #### Workflows
 
-*To be added*
+To be added soon.
 
 ### Key Shortcuts
 
 #### System Wide
 
-| Shortcut  | Action           |
-| :-------- | :--------------- |
-| ⌘ Space   | Spotlight/Alfred |
-| ^ ⌘ Space | Character Viewer |
-| ⌥ ⌘ Esc   | Force Quit App   |
-| ^ ⌘ Q     | Lock Screen      |
+| Shortcut  | Action            |
+| :-------- | :---------------- |
+| ⌘ Space   | Spotlight/Alfred  |
+| ^ ⌘ Space | Character Viewer  |
+| ⌥ ⌘ Space | Clipboard History |
+| ⌥ ⌘ Esc   | Force Quit App    |
+| ^ ⌘ Q     | Lock Screen       |
 
 #### Windows Management
 
@@ -497,9 +500,17 @@ Lastpass is a password manager that can safely store and sync your passwords. [A
 
 Spark is a very powerful email client, that in addition to looking good provides lots of nice features. [AppStore Link](https://apps.apple.com/gb/app/spark-email-app-by-readdle/id1176895641?mt=12)
 
+#### Notification Badges
+
+`Spark > Preferences > Notifications > Badges > Enable Dock Icon Badge - New Messages Only`
+
 ### [Things 3](https://apps.apple.com/gb/app/things-3/id904280696?mt=12)
 
 Award winning task manager for organising tasks and projects. [AppStore Link](https://apps.apple.com/gb/app/things-3/id904280696?mt=12)
+
+#### Things Cloud
+
+`Things > Preferences > Things Cloud`
 
 ### [Bear](https://bear.app/)
 
