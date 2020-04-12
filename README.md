@@ -56,6 +56,7 @@ Personal MacOSx setup for software development.
   - [LastPass](#lastpass)
 - [Productivity](#productivity)
   - [Spark](#spark)
+  - [Things 3](#things-3)
   - [Bear](#bear)
   - [Trello](#trello)
 
@@ -495,6 +496,10 @@ Lastpass is a password manager that can safely store and sync your passwords. [A
 ### [Spark](https://sparkmailapp.com/)
 
 Spark is a very powerful email client, that in addition to looking good provides lots of nice features. [AppStore Link](https://apps.apple.com/gb/app/spark-email-app-by-readdle/id1176895641?mt=12)
+
+### [Things 3](https://apps.apple.com/gb/app/things-3/id904280696?mt=12)
+
+Award winning task manager for organising tasks and projects. [AppStore Link](https://apps.apple.com/gb/app/things-3/id904280696?mt=12)
 
 ### [Bear](https://bear.app/)
 
