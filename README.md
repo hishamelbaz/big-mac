@@ -5,6 +5,13 @@ Personal MacOSx setup for software development.
 - [MacOSx](#macosx)
   - [Finder](#finder)
     - [Show Path and Status Bars](#show-path-and-status-bars)
+  - [Alfred (Spotlight Replacement)](#alfred-spotlight-replacement)
+    - [Installation](#installation)
+    - [Disabling Spotlight Hotkey](#disabling-spotlight-hotkey)
+    - [Enable Alfred Hotkey](#enable-alfred-hotkey)
+    - [Clipboard History](#clipboard-history)
+    - [Theme](#theme)
+    - [Workflows](#workflows)
   - [Key Shortcuts](#key-shortcuts)
     - [System Wide](#system-wide)
     - [Windows Management](#windows-management)
@@ -28,14 +35,21 @@ Personal MacOSx setup for software development.
     - [ZSH Plugins](#zsh-plugins)
   - [tldr](#tldr)
   - [tree](#tree)
+  - [htop](#htop)
+  - [fzf](#fzf)
+    - [Examples](#examples)
+  - [ripgrep](#ripgrep)
+  - [lnav](#lnav)
 - [Browsers](#browsers)
   - [Firefox](#firefox)
-    - [Installation](#installation)
+    - [Installation](#installation-1)
     - [Add-ons](#add-ons)
   - [Setting Default Browser](#setting-default-browser)
 - [Development](#development)
+  - [Docker](#docker)
+  - [Installation](#installation-2)
   - [Visual Studio Code](#visual-studio-code)
-    - [Installation](#installation-1)
+    - [Installation](#installation-3)
     - [Extensions](#extensions)
       - [Markdown](#markdown)
 - [Security](#security)
@@ -55,6 +69,39 @@ Personal MacOSx setup for software development.
 
 `Finder > View > Show Path Bar`  
 `Finder > View > Show Status Bar`
+
+### Alfred (Spotlight Replacement)
+
+Alfred is a very capable Spotlight replacement. It offers same features as Spotlight but also offers a wide range of additional features. It's a free app, but most nice features require a Powerpack which comes with a one time cost.
+
+#### Installation
+
+```bash
+brew cask install alfred
+```
+
+#### Disabling Spotlight Hotkey
+
+`MacOSx > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Spotlight Search`  
+`MacOSx > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Finder Search Window`
+
+#### Enable Alfred Hotkey
+
+`Alfred Preferences > General > Change Hotkey to ⌘ + Space`
+
+#### Clipboard History
+
+`Alfred Preferences > Features > Clipboard History > ☑️ Keep Plain Text`
+
+Add any sensitive apps to the ignored apps section.
+
+#### Theme
+
+`Alfed Preferences > Appearance > Modern Avenir`
+
+#### Workflows
+
+*To be added*
 
 ### Key Shortcuts
 
@@ -258,8 +305,8 @@ Color Themes:
   git clone https://github.com/dracula/iterm.git
   ```
 
-  ``iTerm2 > Preferences > Profiles > Select Profile > Colors > Import Dracula.itermcolors``  
-  ``iTerm2 > Preferences > Profiles > Select Profile > Colors > Select Dracula``
+  `iTerm2 > Preferences > Profiles > Select Profile > Colors > Import Dracula.itermcolors`
+  `iTerm2 > Preferences > Profiles > Select Profile > Colors > Select Dracula`
 
 Themes:
 
@@ -342,6 +389,43 @@ brew install tree
 
 ![Tree](assets/images/tree.png)
 
+### [htop](https://linux.die.net/man/1/htop)
+
+An advanced `top` command that allows scrolling.
+
+```bash
+brew install htop
+```
+
+### [fzf](https://github.com/junegunn/fzf)
+
+A fuzzy search command line tool that allows interactive searching in any kinds of lists.
+
+```bash
+brew install fzf
+```
+
+#### Examples
+
+- `ls | fzf`
+- `find . -type f | fzf`
+
+### [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+A recrusive grep command that runs on a directory of files.
+
+```bash
+brew install ripgrep
+```
+
+### [lnav](http://lnav.org)
+
+A log analysis tool that merges log files, detect their formats and allow advanced searching on them.
+
+```bash
+brew install lnav
+```
+
 ---
 
 ## Browsers
@@ -371,7 +455,17 @@ brew cask install firefox
 
 ## Development
 
+### [Docker](https://www.docker.com/)
+
+### Installation
+
+```bash
+brew cask install docker
+```
+
 ### [Visual Studio Code](https://code.visualstudio.com)
+
+IDE that has the largest community support, with support to all mainstream languages and frameworks.
 
 #### Installation
 
