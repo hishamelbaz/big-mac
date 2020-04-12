@@ -22,10 +22,21 @@ Personal MacOSx setup for software development.
     - [Triggers](#triggers)
   - [Git](#git)
   - [ZSH](#zsh)
-    - [ZSH Plugins](#zsh-plugins)
-  - [Oh My ZSH](#oh-my-zsh)
-    - [Theme](#theme)
-    - [Oh My ZSH Plugins](#oh-my-zsh-plugins)
+    - [Oh My ZSH](#oh-my-zsh)
+      - [Theme](#theme)
+    - [Plugins](#plugins)
+- [Browsers](#browsers)
+  - [Firefox](#firefox)
+    - [Installation](#installation)
+    - [Add-ons](#add-ons)
+  - [Setting Default Browser](#setting-default-browser)
+- [Development](#development)
+  - [Visual Studio Code](#visual-studio-code)
+    - [Installation](#installation-1)
+    - [Extensions](#extensions)
+      - [Markdown](#markdown)
+- [Security](#security)
+  - [LastPass](#lastpass)
 
 ---
 
@@ -129,6 +140,7 @@ brew cask install iterm2
 #### Hotkey Window
 
 Show and hide iTerm2 terminal using a hotkey. This can be done by following the below steps:
+
 1. `iTerm2 > Preferences > Profiles > Select Profile > Window > Style - Full-Width Top of Screen`
 2. `iTerm2 > Preferences > Profiles > Select Profile > Window > Screen - Screen with Cursor`
 3. `iTerm2 > Preferences > Profiles > Select Profile > Window > Space - All Spaces`
@@ -154,8 +166,8 @@ You can enter instant replay mode using `⎇ ⌘ B` and then use left and right 
 
 Shell integration offers better integration with Shell and enables features like:
 
-1.  Access to frequently used directories.
-2.  Automatic profile switching based on host names or user profiles.
+1. Access to frequently used directories.
+2. Automatic profile switching based on host names or user profiles.
 
 You can enable shell integration by running:
 
@@ -188,6 +200,7 @@ brew install git
 ```
 
 Configure Git by running:
+
 ```bash
 git config --global user.name "John Doe"
 git config --global user.email "john.doe@example.com"
@@ -215,7 +228,7 @@ Oh My ZSH is a framework that manages ZSH shell configurations. It offers an eas
 To install:
 
 ```bash
-sh -c “$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 This will update ZSH preferences by overwriting `~/.zshrc`. Below are some customization that can be applied to that file to support different features.
@@ -243,7 +256,7 @@ Recommended Themes:
 
   Then set `ZSH_THEME="spaceship"` in your `~/.zshrc`
 
-#### ZSH Plugins
+#### Plugins
 
 - [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting): highlights commands in ZSH terminal.
 
@@ -271,3 +284,55 @@ Recommended Themes:
   ```bash
   echo "bindkey '^[[A' history-substring-search-up" >> ~/.zshrc
   ```
+
+---
+
+## Browsers
+
+### [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
+
+Firefox is one of the best browsers out there. Some of the very useful features are:
+
+- **Add-ons**: very rich store of add-ons that can be added to the browser.
+- **Firefox Monitor**: monitors breaches for user email accounts to promptly notify the user to act quickly.
+
+#### Installation
+
+```bash
+brew cask install firefox
+```
+
+#### Add-ons
+
+- **LastPass**: password manager extension to fill in forms.
+
+### Setting Default Browser
+
+`MacOSx > System Preferences > General > Default web browser`
+
+---
+
+## Development
+
+### [Visual Studio Code](https://code.visualstudio.com)
+
+#### Installation
+
+```bash
+brew cask install visual-studio-code
+```
+
+#### Extensions
+
+##### Markdown
+
+- **Markdown All in One**: adds very useful Markdown features like; Table of Contents, Key Shortcuts and Formatting.
+- **markdownlint**: adds support for linting in Markdown.
+
+---
+
+## Security
+
+### [LastPass](https://www.lastpass.com/)
+
+Lastpass is a password manager that can safely store and sync your passwords. You can install it from the [AppStore](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
