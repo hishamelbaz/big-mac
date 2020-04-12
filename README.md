@@ -181,10 +181,16 @@ In addition to the above features, iTerm2 has a [wide range of features](https:/
 
 Popular tool used for version control.
 
-To install:
+Homebrew will require installation of XCode CommandLine Tools, and that normally installs git. But if you need to install it using brew:
 
 ```bash
 brew install git
+```
+
+Configure Git by running:
+```bash
+git config --global user.name "John Doe"
+git config --global user.email "john.doe@example.com"
 ```
 
 ### [ZSH](https://www.zsh.org/)
