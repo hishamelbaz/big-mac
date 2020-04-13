@@ -47,7 +47,11 @@ Personal MacOSx setup for software development.
   - [Docker](#docker)
   - [Visual Studio Code](#visual-studio-code)
     - [Extensions](#extensions)
+      - [Theme](#theme-1)
+      - [Java](#java)
+      - [JavaScript](#javascript)
       - [Markdown](#markdown)
+      - [Miscellaneous](#miscellaneous)
 - [Security](#security)
   - [LastPass](#lastpass)
 - [Productivity](#productivity)
@@ -57,7 +61,7 @@ Personal MacOSx setup for software development.
     - [Things Cloud](#things-cloud)
   - [Bear](#bear)
   - [Trello](#trello)
-- [Miscellaneous](#miscellaneous)
+- [Miscellaneous](#miscellaneous-1)
   - [Unsplash Wallpapers](#unsplash-wallpapers)
   - [AppCleaner](#appcleaner)
 
@@ -97,7 +101,7 @@ Add any sensitive apps to the ignored apps section.
 
 #### Theme
 
-`Alfed Preferences > Appearance > Modern Avenir`
+`Alfred Preferences > Appearance > Modern Avenir`
 
 #### Workflows
 
@@ -272,7 +276,7 @@ git config --global user.email "john.doe@example.com"
 ZSH is an advanced shell built on top of Bash that offers a wide range of useful features including:
 
 - **Tab Completion**: Press `Tab` to autocomplete commands.
-- **Globbing**: Use wildcards to list all possible options, for example `ls file_*`
+- **Glob**: Use wildcards to list all possible options, for example `ls file_*`
 
 It comes as the default shell with Catalina, but for earlier versions you can install it by running:
 
@@ -413,7 +417,7 @@ brew install fzf
 
 ### [ripgrep](https://github.com/BurntSushi/ripgrep)
 
-A recrusive grep command that runs on a directory of files.
+A recursive grep command that runs on a directory of files.
 
 ```bash
 brew install ripgrep
@@ -470,10 +474,38 @@ brew cask install visual-studio-code
 
 #### Extensions
 
+##### Theme
+
+- **Atom One Dark Theme**: a dark but vibrant theme.
+- **vscode-icons**: custom icons for most supported extensions.
+
+##### Java
+
+- **Language Support for Java**: Java linting, intellisense, formatting and Gradle/Maven support.
+- **Lombok Annotations Support**: support for lombok generators in Java.
+
+##### JavaScript
+
+- **npm**: supports running npm scripts in VSCode.
+- **npm intellisense**: autocompletion for npm modules.
+- **Jest**: support for Jest testing framework.
+- **ESLint**: integrates linting for JavaScript.
+
 ##### Markdown
 
 - **Markdown All in One**: adds very useful Markdown features like; Table of Contents, Key Shortcuts and Formatting.
 - **markdownlint**: adds support for linting in Markdown.
+
+##### Miscellaneous
+
+- **Prettier**: code formatter that uses Prettier framework.
+- **Bracket Pair Colorizer**: colors corresponding pair for better readability.
+- **Better Comments**: human friendly comments in the code by adding hinting, colors and visibility.
+- **Gitlens**: great extension for improving git and source control capabilities.
+- **Partial Diff**: enables running diff on clipboard, partial code and files.
+- **Path Intellisense**: adds autocompletion for paths.
+- **Code Spell Checker**: hints for spelling mistakes.
+- **Docker**: support for Docker files and images.
 
 ---
 
@@ -481,7 +513,7 @@ brew cask install visual-studio-code
 
 ### [LastPass](https://www.lastpass.com/)
 
-Lastpass is a password manager that can safely store and sync your passwords. [AppStore Link](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
+LastPass is a password manager that can safely store and sync your passwords. [AppStore Link](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
 
 ---
 
