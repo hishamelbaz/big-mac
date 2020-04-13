@@ -61,6 +61,8 @@ Personal MacOSx setup for software development.
     - [Things Cloud](#things-cloud)
   - [Bear](#bear)
   - [Trello](#trello)
+- [Miscellaneous](#miscellaneous)
+  - [Unsplash Wallpapers](#unsplash-wallpapers)
 
 ---
 
@@ -519,3 +521,11 @@ Bear is a minimalistic inline markdown editor, it's a great tool for note taking
 ### [Trello](https://trello.com/)
 
 Trello is a simplistic but powerful board to organize tasks and plans for projects. [AppStore Link](https://apps.apple.com/gb/app/trello/id1278508951?mt=12)
+
+---
+
+## Miscellaneous
+
+### [Unsplash Wallpapers](https://unsplash.com/wallpapers)
+
+An application that rotates wallpapers from UnSplash wallpapers feed. [AppStore Link](https://apps.apple.com/gb/app/unsplash-wallpapers/id1284863847?mt=12)
