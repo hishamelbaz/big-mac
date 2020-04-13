@@ -22,6 +22,7 @@ Personal MacOSx setup for software development.
   - [iTerm2](#iterm2)
     - [Key Shortcuts](#key-shortcuts-1)
     - [Hotkey Window](#hotkey-window)
+    - [Unlimited Scrollback](#unlimited-scrollback)
     - [Setting Key Bindings](#setting-key-bindings)
     - [Status Bar](#status-bar)
     - [Shell Integration](#shell-integration)
@@ -54,6 +55,14 @@ Personal MacOSx setup for software development.
       - [Miscellaneous](#miscellaneous)
 - [Security](#security)
   - [LastPass](#lastpass)
+- [Languages](#languages)
+  - [Java](#java-1)
+  - [Python](#python)
+    - [Anaconda](#anaconda)
+      - [Useful Commands](#useful-commands-1)
+  - [Node](#node)
+    - [Installation](#installation)
+    - [Useful Commands](#useful-commands-2)
 - [Productivity](#productivity)
   - [Spark](#spark)
     - [Notification Badges](#notification-badges)
@@ -206,6 +215,10 @@ Show and hide iTerm2 terminal using a hotkey. This can be done by following the 
 3. `iTerm2 > Preferences > Profiles > Select Profile > Window > Space - All Spaces`
 4. `iTerm2 > Preferences > Profiles > Select Profile > Keys > ☑️  A hotkey opens a dedicated window with this profile > Configure Hotkey Window > Add Hotkey`
 5. `iTerm2 > Preferences > Appearance > ☑️  Exclude from Dock and ⌘-Tab Application Switcher`
+
+#### Unlimited Scrollback
+
+`iTerm2 > Preferences > Profiles > Select Profile > Terminal > Scrollback Lines > ☑️ Unlimited Scrollback`
 
 #### Setting Key Bindings
 
@@ -449,6 +462,7 @@ brew cask install firefox
 #### Add-ons
 
 - **LastPass**: password manager extension to fill in forms.
+- **JSONView**: viewer for JSON objects.
 
 ### Setting Default Browser
 
@@ -514,6 +528,75 @@ brew cask install visual-studio-code
 ### [LastPass](https://www.lastpass.com/)
 
 LastPass is a password manager that can safely store and sync your passwords. [AppStore Link](https://apps.apple.com/gb/app/lastpass-password-manager/id926036361?mt=12)
+
+---
+
+## Languages
+
+### Java
+
+Install latest LTS JDK, currently 11.
+
+```bash
+brew tap homebrew/cask-versions
+brew cask install java11
+```
+
+### Python
+
+MacOSx Catalina comes by default with Python2.7 support, installing XCode command line tools gives support to Python3 as well.
+
+Alternatively you can install python using Homebrew:
+
+```bash
+brew install python
+```
+
+#### Anaconda
+
+Anaconda is a very powerful package and environment manager for Python, and is widely used for science projects on Python.
+
+```bash
+brew cask install anaconda
+echo "export PATH=$PATH:/usr/local/anaconda3/bin" >> ~/.zshrc
+conda init zsh
+```
+
+##### Useful Commands
+
+- **conda activate**: activate default python environment.
+- **conda activate [environment]**: activate given python environment.
+- **conda deactivate**: deactivates the environment.
+- **conda create --name [environment]**: creates a new environment.
+- **conda install [package]**: installs the given package.
+- **conda remove [package]**: removes the given package.
+- **conda update [package]**: updates the given package.
+- **conda list**: lists all installed packages in the activated environment.
+
+### Node
+
+The recommended way to install Node is through Node Version Manager (nvm) which allows installation of multiple Node versions and changing them easily.
+
+#### Installation
+
+```bash
+brew install nvm
+mkdir ~/.nvm
+```
+
+Then add the following to `~/.zshrc`:
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
+```
+
+#### Useful Commands
+
+- **nvm ls**: list installed node versions.
+- **nvm install [node-version]**: install provided node version.
+- **nvm use [node-version]**: use provided node version.
 
 ---
 
