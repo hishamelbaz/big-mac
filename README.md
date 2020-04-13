@@ -59,6 +59,7 @@ Personal MacOSx setup for software development.
   - [Trello](#trello)
 - [Miscellaneous](#miscellaneous)
   - [Unsplash Wallpapers](#unsplash-wallpapers)
+  - [AppCleaner](#appcleaner)
 
 ---
 
@@ -517,3 +518,11 @@ Trello is a simplistic but powerful board to organize tasks and plans for projec
 ### [Unsplash Wallpapers](https://unsplash.com/wallpapers)
 
 An application that rotates wallpapers from UnSplash wallpapers feed. [AppStore Link](https://apps.apple.com/gb/app/unsplash-wallpapers/id1284863847?mt=12)
+
+### [AppCleaner](https://freemacsoft.net/appcleaner/)
+
+A free application to completely remove applications and all its data. 
+
+```bash
+brew cask install appcleaner
+```
