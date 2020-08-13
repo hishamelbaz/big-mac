@@ -1,8 +1,8 @@
 # BigMac <!-- omit in toc -->
 
-Personal MacOSx setup for software development.
+Personal macOS setup for software development.
 
-- [MacOSx](#macosx)
+- [macOS](#macOS)
   - [Finder](#finder)
     - [Show Path and Status Bars](#show-path-and-status-bars)
   - [Alfred (Spotlight Replacement)](#alfred-spotlight-replacement)
