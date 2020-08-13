@@ -76,7 +76,7 @@ Personal macOS setup for software development.
 
 ---
 
-## MacOSx
+## macOS
 
 ### Finder
 
