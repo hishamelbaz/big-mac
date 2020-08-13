@@ -95,8 +95,8 @@ brew cask install alfred
 
 #### Disabling Spotlight Hotkey
 
-`MacOSx > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Spotlight Search`  
-`MacOSx > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Finder Search Window`
+`macOS > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Spotlight Search`  
+`macOS > System Preferences > Spotlight > Keyboard Shortcuts > Uncheck Show Finder Search Window`
 
 #### Enable Alfred Hotkey
 
@@ -163,7 +163,7 @@ To be added soon.
 
 ### [Homebrew](https://brew.sh/)
 
-Homebrew is a very useful MacOSx package manager which can be accessed from terminal.
+Homebrew is a very useful macOS package manager which can be accessed from terminal.
 
 To install it open terminal and run this command:
 
@@ -176,9 +176,9 @@ To install it open terminal and run this command:
 - **brew doctor**: verify installation of Homebrew.
 - **brew search**: search for available packages on Homebrew.
 - **brew install**: installs command line tools.
-- **brew cask install**: installs MacOSx applications.
+- **brew cask install**: installs macOS applications.
 - **brew list**: lists installed command line tools.
-- **brew cask list**: lists installed MacOSx applications.
+- **brew cask list**: lists installed macOS applications.
 - **brew update**: updates local package registry.
 - **brew upgrade**: upgrade all installed packages.
 - **brew cleanup**: clean broken symlinks
@@ -466,7 +466,7 @@ brew cask install firefox
 
 ### Setting Default Browser
 
-`MacOSx > System Preferences > General > Default web browser`
+`macOS > System Preferences > General > Default web browser`
 
 ---
 
@@ -544,7 +544,7 @@ brew cask install java11
 
 ### Python
 
-MacOSx Catalina comes by default with Python2.7 support, installing XCode command line tools gives support to Python3 as well.
+macOS Catalina comes by default with Python2.7 support, installing XCode command line tools gives support to Python3 as well.
 
 Alternatively you can install python using Homebrew:
 
