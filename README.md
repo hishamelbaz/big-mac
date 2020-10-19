@@ -292,12 +292,6 @@ Configure Git by editing `~/.gitconfig` file:
         graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 ```
 
-Add Git Graph Command:
-
-```bash
-
-```
-
 ### [ZSH](https://www.zsh.org/)
 
 ZSH is an advanced shell built on top of Bash that offers a wide range of useful features including:
