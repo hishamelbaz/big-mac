@@ -8,7 +8,7 @@ Personal macOS setup for software development.
   - [Alfred (Spotlight Replacement)](#alfred-spotlight-replacement)
     - [Disabling Spotlight Hotkey](#disabling-spotlight-hotkey)
     - [Enable Alfred Hotkey](#enable-alfred-hotkey)
-    - [Show Alfred on Active Screen](#show-alfred-on-active-screen)
+    - [Show Alfred on Active Screen](#show-alfred-on-the-active-screen)
     - [Clipboard History](#clipboard-history)
     - [Theme](#theme)
     - [Workflows](#workflows)
