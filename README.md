@@ -553,8 +553,8 @@ LastPass is a password manager that can safely store and sync your passwords. [A
 Install latest LTS JDK, currently 11.
 
 ```bash
-brew tap homebrew/cask-versions
-brew cask install java11
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk11
 ```
 
 ### Python
