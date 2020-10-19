@@ -224,7 +224,7 @@ Show and hide iTerm2 terminal using a hotkey. This can be done by following the 
 
 #### Appearance
 
-Optionally set some default appearance settings by following the below:
+Optionally set some default appearance settings by following the below:  
 `iTerm2 > Preferences > Appearance > General > Theme > Dark`  
 `iTerm2 > Preferences > Appearance > General > Tab Bar Location > Left`
 
