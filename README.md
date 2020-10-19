@@ -510,7 +510,7 @@ brew cask install visual-studio-code
 
 ##### Java
 
-- **Language Support for Java**: Java linting, intellisense, formatting and Gradle/Maven support.
+- **Java Extension Pack**: Java linting, intellisense, formatting and Gradle/Maven support.
 - **Lombok Annotations Support**: support for lombok generators in Java.
 
 ##### JavaScript
