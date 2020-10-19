@@ -23,6 +23,7 @@ Personal macOS setup for software development.
   - [iTerm2](#iterm2)
     - [Key Shortcuts](#key-shortcuts-1)
     - [Hotkey Window](#hotkey-window)
+    - [Appearance](#appearance)
     - [Unlimited Scrollback](#unlimited-scrollback)
     - [Setting Key Bindings](#setting-key-bindings)
     - [Status Bar](#status-bar)
@@ -221,6 +222,12 @@ Show and hide iTerm2 terminal using a hotkey. This can be done by following the 
 4. `iTerm2 > Preferences > Profiles > Select Profile > Keys > ☑️  A hotkey opens a dedicated window with this profile > Configure Hotkey Window > Add Hotkey`
 5. `iTerm2 > Preferences > Appearance > ☑️  Exclude from Dock and ⌘-Tab Application Switcher`
 
+#### Appearance
+
+Optionally set some default appearance settings by following the below:
+`iTerm2 > Preferences > Appearance > General > Theme > Dark`  
+`iTerm2 > Preferences > Appearance > General > Tab Bar Location > Left`
+
 #### Unlimited Scrollback
 
 `iTerm2 > Preferences > Profiles > Select Profile > Terminal > Scrollback Lines > ☑️ Unlimited Scrollback`
@@ -331,7 +338,7 @@ Color Themes:
   git clone https://github.com/dracula/iterm.git
   ```
 
-  `iTerm2 > Preferences > Profiles > Select Profile > Colors > Import Dracula.itermcolors`
+  `iTerm2 > Preferences > Profiles > Select Profile > Colors > Import Dracula.itermcolors`  
   `iTerm2 > Preferences > Profiles > Select Profile > Colors > Select Dracula`
 
 Themes:
