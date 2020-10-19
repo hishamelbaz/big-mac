@@ -8,7 +8,7 @@ Personal macOS setup for software development.
   - [Alfred (Spotlight Replacement)](#alfred-spotlight-replacement)
     - [Disabling Spotlight Hotkey](#disabling-spotlight-hotkey)
     - [Enable Alfred Hotkey](#enable-alfred-hotkey)
-    - [Show Alfred on Active Screen](#show-alfred-on-the-active-screen)
+    - [Show Alfred on Mouse Screen](#show-alfred-on-the-mouse-screen)
     - [Clipboard History](#clipboard-history)
     - [Theme](#theme)
     - [Workflows](#workflows)
@@ -103,9 +103,9 @@ brew cask install alfred
 
 `Alfred Preferences > General > Change Hotkey to ⌘ + Space`
 
-#### Show Alfred on the Active Screen
+#### Show Alfred on the Mouse Screen
 
-`Alfred Preferences > Appearance > Options > Show Alfred on "active screen"`
+`Alfred Preferences > Appearance > Options > Show Alfred on "mouse screen"`
 
 #### Clipboard History
 
