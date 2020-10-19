@@ -227,7 +227,7 @@ Show and hide iTerm2 terminal using a hotkey. This can be done by following the 
 
 #### Setting Key Bindings
 
-You can set key bindings by going to `iTerm2 > Preferences > Keys > Key Binding`
+You can set key bindings by going to `iTerm2 > Preferences > Profiles > Select Profile > Keys > Key Binding`
 
 Some useful key bindings can be viewed in the table below:
 
