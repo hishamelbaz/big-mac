@@ -5,6 +5,9 @@ Personal macOS setup for software development.
 - [macOS](#macOS)
   - [Finder](#finder)
     - [Show Path and Status Bars](#show-path-and-status-bars)
+    - [Snap to Grid](#snap-to-grid)
+  - [Mission Control](#mission-control)
+    - [Disable Automatic Rearrangement of Spaces](#disable-automatic-rearrangement-of-spaces)
   - [Alfred (Spotlight Replacement)](#alfred-spotlight-replacement)
     - [Disabling Spotlight Hotkey](#disabling-spotlight-hotkey)
     - [Enable Alfred Hotkey](#enable-alfred-hotkey)
@@ -87,6 +90,14 @@ Personal macOS setup for software development.
 
 `Finder > View > Show Path Bar`  
 `Finder > View > Show Status Bar`
+
+#### Snap to Grid
+`Finder > View > Show View Options > Sort By > Snap to Grid`
+
+### Mission Control
+
+#### Disable Automatic Rearrangement of Spaces
+`System Preferences > Mission Control > ☐ Automatically rearrange Spaces based on most recent use`
 
 ### Alfred (Spotlight Replacement)
 
