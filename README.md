@@ -282,18 +282,20 @@ Homebrew will require installation of XCode CommandLine Tools, and that normally
 brew install git
 ```
 
-Configure Git by running:
+Configure Git by editing `~/.gitconfig` file:
 
 ```bash
-git config --global user.name "John Doe"
-git config --global user.email "john.doe@example.com"
+[user]
+        name = Hisham Elbaz
+        email = hisham.elbaz@babylonhealth.com
+[alias]
+        graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 ```
 
 Add Git Graph Command:
 
 ```bash
-[alias]
-graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
 ```
 
 ### [ZSH](https://www.zsh.org/)
