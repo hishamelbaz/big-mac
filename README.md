@@ -102,6 +102,10 @@ brew cask install alfred
 
 `Alfred Preferences > General > Change Hotkey to ⌘ + Space`
 
+#### Show Alfred on the Active Screen
+
+`Alfred Preferences > Appearance > Options > Show Alfred on "active screen"`
+
 #### Clipboard History
 
 `Alfred Preferences > Features > Clipboard History > ☑️ Keep Plain Text`
