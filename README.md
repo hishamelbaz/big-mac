@@ -70,6 +70,7 @@ Personal macOS setup for software development.
     - [Notification Badges](#notification-badges)
   - [Things 3](#things-3)
     - [Things Cloud](#things-cloud)
+  - [Notion](#notion)
   - [Bear](#bear)
   - [Trello](#trello)
 - [Miscellaneous](#miscellaneous-1)
@@ -632,6 +633,10 @@ Award winning task manager for organising tasks and projects. [AppStore Link](ht
 #### Things Cloud
 
 `Things > Preferences > Things Cloud`
+
+### [Notion](https://www.notion.so/)
+
+Notion is a very powerful note taking app that supports integration with many tools. [Download Link](https://www.notion.so/desktop)
 
 ### [Bear](https://bear.app/)
 
