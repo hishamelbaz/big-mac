@@ -201,6 +201,20 @@ To install it open terminal and run this command:
 - **brew upgrade**: upgrade all installed packages.
 - **brew cleanup**: clean broken symlinks
 
+#### Installing Older Versions
+Older versions can be installed by checking out the homebrew/core commit with that older version and installing it, this can be done by:
+
+```bash
+cd "$(brew --repo homebrew/core)"
+git log Formula/<formula-name>.rb # Replace <formula-name> and choose the commit with the version needed
+git checkout -b <formula-name>-<version> <commit-hash>
+HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula-name>
+brew pin <formula-name>
+git checkout master
+git branch -d <formula-name>-<version>
+brew cleanup
+```
+
 ### [iTerm2](https://www.iterm2.com/index.html)
 
 iTerm2 is arguably the best terminal replacement. It offers a wide range of very useful features.
