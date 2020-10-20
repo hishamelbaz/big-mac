@@ -23,6 +23,7 @@ Personal macOS setup for software development.
 - [Terminal](#terminal)
   - [Homebrew](#homebrew)
     - [Useful Commands](#useful-commands)
+    - [Installing Older Versions](#installing-older-versions)
   - [iTerm2](#iterm2)
     - [Key Shortcuts](#key-shortcuts-1)
     - [Hotkey Window](#hotkey-window)
