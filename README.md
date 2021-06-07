@@ -105,7 +105,7 @@ Personal macOS setup for software development.
 Alfred is a very capable Spotlight replacement. It offers same features as Spotlight but also offers a wide range of additional features. It's a free app, but most nice features require a Powerpack which comes with a one time cost.
 
 ```bash
-brew cask install alfred
+brew install alfred
 ```
 
 #### Disabling Spotlight Hotkey
@@ -195,9 +195,9 @@ To install it open terminal and run this command:
 - **brew doctor**: verify installation of Homebrew.
 - **brew search**: search for available packages on Homebrew.
 - **brew install**: installs command line tools.
-- **brew cask install**: installs macOS applications.
+- **brew install --cask**: installs macOS applications.
 - **brew list**: lists installed command line tools.
-- **brew cask list**: lists installed macOS applications.
+- **brew list --cask**: lists installed macOS applications.
 - **brew update**: updates local package registry.
 - **brew upgrade**: upgrade all installed packages.
 - **brew cleanup**: clean broken symlinks
@@ -223,7 +223,7 @@ iTerm2 is arguably the best terminal replacement. It offers a wide range of very
 To install iTerm2 open terminal and run this command:
 
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 #### Key Shortcuts
@@ -321,7 +321,7 @@ Configure Git by editing `~/.gitconfig` file:
 ```bash
 [user]
         name = Hisham Elbaz
-        email = hisham.elbaz@babylonhealth.com
+        email = hisham.elbaz@example.com
 [alias]
         graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
 ```
@@ -498,7 +498,7 @@ Firefox is one of the best browsers out there. Some of the very useful features 
 - **Firefox Monitor**: monitors breaches for user email accounts to promptly notify the user to act quickly.
 
 ```bash
-brew cask install firefox
+brew install --cask firefox
 ```
 
 #### Add-ons
@@ -517,7 +517,7 @@ brew cask install firefox
 ### [Docker](https://www.docker.com/)
 
 ```bash
-brew cask install docker
+brew install --cask docker
 ```
 
 ### [Visual Studio Code](https://code.visualstudio.com)
@@ -525,7 +525,7 @@ brew cask install docker
 IDE that has the largest community support, with support to all mainstream languages and frameworks.
 
 ```bash
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 #### Extensions
@@ -581,7 +581,7 @@ Install latest LTS JDK, currently 11.
 
 ```bash
 brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk11
+brew install --cask adoptopenjdk11
 ```
 
 ### Python
@@ -599,7 +599,7 @@ brew install python
 Anaconda is a very powerful package and environment manager for Python, and is widely used for science projects on Python.
 
 ```bash
-brew cask install anaconda
+brew install --cask anaconda
 echo "export PATH=$PATH:/usr/local/anaconda3/bin" >> ~/.zshrc
 conda init zsh
 ```
@@ -685,5 +685,5 @@ An application that rotates wallpapers from UnSplash wallpapers feed. [AppStore 
 A free application to completely remove applications and all its data. 
 
 ```bash
-brew cask install appcleaner
+brew install --cask appcleaner
 ```
